@@ -1,11 +1,9 @@
-// Action type constants go here
 const NEW_DONUT_ORDER = 'NEW_DONUT_ORDER'
 
 const HANDLE_FIELD_CHANGE = 'HANDLE_FIELD_CHANGE'
 
 const CLEAR_FORM = 'CLEAR_FORM'
 
-// Action creators go here
 
 const handleFieldChange = (event) => {
   const newValue = event.target.value
@@ -29,9 +27,6 @@ const clearForm = () => {
     type: CLEAR_FORM
   }
 }
-
-
-// Reducer and its initialState go here
 
 const initialState = {
   name: '',
@@ -68,8 +63,6 @@ const donuts = (state = initialState, action) => {
       return state
   }
 };
-
-// Export statement goes here
 
 export {
   donuts,
